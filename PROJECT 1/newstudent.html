@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>New student</title>
-        
+       <link rel="stylesheet" type = "text/css"
+        href="style.css">
     </head>
     <body>
        <!--nav-->
@@ -13,6 +14,8 @@
        <hr>
        <!--Sec-->
        <form action = "#" method ="get" >
+        <fieldset>
+            <legend>Personal Information</legend>
            <p>
                <label>
                    Full Name : 
@@ -21,29 +24,51 @@
                </label>
            </p>
            <P>
-               <label> 
-                   birthday date :
-                <input type = "date " name = " txtBD">
+            <label >Birthday Date :
+            <input type="date" name="txtBD">
+            
                </label>
            </P>
            <p>
                <label>
-                   gender :
-                   <input type = "radio" name = "gender" value = "male" > male
-                   <input type = "radio" name = "gender" value = "female" > female
+                   Gender :
+                   <input type = "radio" name = "gender" value = "male" > Male
+                   <input type = "radio" name = "gender" value = "female" > Female
                </label>
            </p>
+           </fieldset>
+           <br>
+           <fieldset>
+            <legend> Contact Information</legend>
            <p>
+            <label>
+                Email :
+                <textarea rows = "2" cols = "80" name = "txtemail"></textarea>
+            </label>
+            </P>
+            <p>
+
+            <label>
+               Phone:
+                <textarea rows = "2" cols = "80" name = "txtemail"></textarea>
+            </label>
+             </P>
+             <p>
                <label>
                    Address:
-                   <textarea rows = "10" cols = "30" name = "txtarea"></textarea>
+                   <textarea rows = "10" cols = "80" name = "txtarea"></textarea>
                </label>
            </p>
-           <p>
+           </fieldset>
+           <br>
+           <fieldset>
+
+            <legend> University Information</legend>
+           <p >
                <label>
-                   choose your faculty:
-                   <select>
-                       <option value= "FCIT" > 
+                   Choose Your Faculty:
+                   <select  style="width: 1000px;">
+                       <option  value= "FCIT" > 
                            Computer Science         
                        </option>
                        <option value = " f2">
@@ -55,10 +80,13 @@
                    </select>
 
                </label>
-           </p>
-           <label>
-               <input type = "submit">
+            </p>
+            </fieldset>
+            <p class = ".special">
+           <label >
+               <input  type = "Submit">
            </label>
+        </p>
 
        </form>
        <!--#sec-->
