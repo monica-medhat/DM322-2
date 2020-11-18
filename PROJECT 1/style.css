@@ -1,10 +1,20 @@
 p {
     font-family: 'Courier New', Courier, monospace;
+    padding: 8px 50px;
 }
 
-input[type=Submit]{
+.special{
     background-color: #4CAF50;
-    border: none;font-size: 15px;
+    border: none;
+    font-size: 15px;
     color: white;
     padding: 16px 32px;}
     
+select {
+    width: 900px;
+    padding: 8px 16px;
+}
+    fieldset{
+        margin: 5px 35px 5px;
+}
+
