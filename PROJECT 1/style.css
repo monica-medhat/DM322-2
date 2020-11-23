@@ -1,3 +1,4 @@
+/*
 p {
     font-family: 'Courier New', Courier, monospace;
     padding: 8px 50px;
@@ -16,4 +17,65 @@ select {
 }
     fieldset{
         margin: 5px 35px 5px;
+}
+h1{
+    color: #4CAF50;
+    text-align: center;
+}
+*/
+ul {
+    list-style-type: none;
+    border: 5px solid #e7e7e7;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    padding: 1px;
+    margin: 1px;
+}
+li {
+    float: left;
+}
+
+.nav-rgiht {
+    float: right ; 
+}
+a{
+    text-decoration: none;
+    color: #008cba;
+}
+li a {
+    display: block;
+    color: #666;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px ;
+    padding-bottom: 14px;
+}
+li a:hover{
+    background-color: lightgrey;
+
+}
+li a.active{
+    background-color: green;
+    color : white;
+}
+div {
+    border: 5px;
+    border-style: dashed;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5 px dimgray;
+    background-image: linear-gradient(white, blue);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead{
+    background-color: green;
+    color: white;
+}
+thead tr {
+    text-align: center;
+}
+tbody tr:nth-child(odd){
+    background-color: lightgrey;
 }
