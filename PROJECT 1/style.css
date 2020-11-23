@@ -1,4 +1,4 @@
-/*
+
 p {
     font-family: 'Courier New', Courier, monospace;
     padding: 8px 50px;
@@ -14,7 +14,7 @@ p {
 select {
     width: 900px;
     padding: 8px 16px;
-}
+} 
     fieldset{
         margin: 5px 35px 5px;
 }
@@ -22,7 +22,7 @@ h1{
     color: #4CAF50;
     text-align: center;
 }
-*/
+
 ul {
     list-style-type: none;
     border: 5px solid #e7e7e7;
@@ -35,7 +35,7 @@ li {
     float: left;
 }
 
-.nav-rgiht {
+.nav-right {
     float: right ; 
 }
 a{
