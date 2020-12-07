@@ -58,7 +58,7 @@ li a.active{
     background-color: green;
     color : white;
 }
-div {
+div:not(.searchbar,#mytable) {
     border: 5px;
     border-style: dashed;
     border-radius: 20px;
@@ -78,4 +78,29 @@ thead tr {
 }
 tbody tr:nth-child(odd){
     background-color: lightgrey;
+}
+
+.searchbar{
+    width:20%;
+    height:auto;
+    border:1px;
+    border-color:lightgrey;
+    border-style: solid;
+    padding: 0px 10px;
+    margin: 8px auto;
+    border-radius: 24px;
+    display: flexbox;
+
+}
+
+.searchbox{
+    width:80%;
+    padding:8px 8px;
+    border:none;
+    margin: 0 2px;
+    outline:none;
+     
+}
+.searchbar:hover{
+    box-shadow: 0px 15px 6px dimgray;
 }

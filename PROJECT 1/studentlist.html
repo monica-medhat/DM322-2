@@ -3,8 +3,12 @@
         <title>Student List</title>
         <link rel="stylesheet" type = "text/css"
         href="style.css">
+        <script>
+            var arr=[['20194737','MONICA','CS','user.png'],['20190194','JASMIN','CS','user.png'],['20194444','ali','CS','user.png'],['20192222','ahmed','CS','user.png']]
+        </script>
     </head>
-    <body>
+    <body  onload="init();">
+        <!--nav-->
       <nav>
           <ul>
             <li><a href="index.html" target="_blank">Home</a></li>
@@ -15,44 +19,55 @@
       </nav>
        <!--#nav-->
        <hr>
-       <!--Sec-->
-       <table border ="1">
-           <thead>
-               <tr>
-                   <td>ID</td>
-                   <td>name</td>
-                   <td>faculty</td>
-                   <td>image</td>
-               </tr>
-           </thead>
-           <body>
-               <tr>
-                   <td colspan= "2" >20194737 monica </td>
-                   <td>CS</td>
-                   <td><img src ="images/User.png" alt=" user icon" width = "30px" height = "30px" > </td>
-               </tr>
-               <tr>
-                    <td  colspan= "2">20196666 nnnnn </td>
-                    <td>CS</td>
-                    <td><img src ="images/User.png" alt=" user icon" width = "30px" height = "30px" > </td>
-               </tr>
-               <tr>
-                    <td >20191111   </td>
-                    <td>mmmm</td>
-                    <td>CS</td>
-                    <td><img src ="images/User.png" alt=" user icon" width = "30px" height = "30px" > </td>
-                </tr>
-                <tr>
-                    <td>20192222</td>
-                    <td>dddd</td>
-                    <td>CS</td>
-                    <td><img src ="images/User.png" alt=" user icon" width = "30px" height = "30px" > </td>
-                </tr>
-           </body>
-           <tfoot>
-            <td colspan= "4" >total number of students =4</td>
-           </tfoot>
-       </table>
+
+       <div class="searchbar">
+           <input type="search" class="searchbox">
+       </div>
+       <div id="mytable"> </div>
+
+       <hr>
+      
+
+       <script>
+        function init(){
+            var count=0;
+            var mytable='';
+            mytable+='<table border="1">';
+            mytable+='<thead>'+'<tr>'+
+                        '<td>ID</td>'+
+                        '<td>Name</td>'+
+                        '<td>Faculty</td>'+
+                        '<td>image</td>'+
+                        '</tr>'+
+                        '</thead>'+
+                        '<tbody>';
+                        for(let i=0;i<arr.length;i++){
+                            var studentID=arr[i][0];
+                            var studentName=arr[i][1];
+                            var studentFaculty=arr[i][2];
+                            var studentImage=arr[i][3];
+
+                            mytable+='<tr><td>'+studentID+'</td>'+
+                                     '<td>'+studentName+'</td>'+
+                                     '<td>'+studentFaculty+'</td>'+
+                                     '<td>'+'<img src="images//'+studentImage+'" alt="image of'+studentName+'" width="30px" height="30px">'+'</td></tr>'
+
+                                     count++ ;
+
+                        }
+                        mytable+='</tbody>';
+                        mytable+='<tfoot><tr><td colspan="4">Total no. of Students:'+count+'</td></tr></tfoot></table>';
+                        document.getElementById("mytable").innerHTML= mytable ;
+
+
+
+        }
+            </Script>
+
+    
+       
+       
+
        <hr>
     </body>
     <footer>
